@@ -1,5 +1,6 @@
 package Problem1;
 
+import java.util.Arrays;
 
 public class ArrayQueueImpl {
 
@@ -50,13 +51,10 @@ public class ArrayQueueImpl {
 			return 0;
 		return rear - front;
 	}
-	public static void main(String[] args){
-		ArrayQueueImpl q = new ArrayQueueImpl();
-//		q.peek();
-		for(int i = 0; i < 15; i ++)
-			q.enqueue(i);
-		for(int i = 0; i < 14; i ++)
-			q.dequeue();
-		System.out.println(q.size());
+
+	@Override
+	public String toString() {
+		return "ArrayQueueImpl [arr=" + Arrays.toString(arr) + ", front=" + front + ", rear=" + rear + "]";
 	}
+	
 }

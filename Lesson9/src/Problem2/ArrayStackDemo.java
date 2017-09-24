@@ -69,3 +69,11 @@ public class ArrayStackDemo {
 	}
 
 }
+/*Output
+size(): 4
+4 is deleted
+Stack is full
+D is deleted
+G is on top of stack
+Size of the Stack : 4
+*/
